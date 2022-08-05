@@ -1,0 +1,62 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://images/sprite_4.png" type="Texture" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://images/sprite_3.png" type="Texture" id=3]
+[ext_resource path="res://images/sprite_1.png" type="Texture" id=4]
+[ext_resource path="res://images/sprite_2.png" type="Texture" id=5]
+[ext_resource path="res://images/sprite_0.png" type="Texture" id=6]
+[ext_resource path="res://images/Sprite_right/sprite_right3.png" type="Texture" id=7]
+[ext_resource path="res://images/Sprite_right/sprite_right4.png" type="Texture" id=8]
+[ext_resource path="res://images/Sprite_left/sprite_0.png" type="Texture" id=9]
+[ext_resource path="res://images/Sprite_left/sprite_1.png" type="Texture" id=10]
+[ext_resource path="res://images/Sprite_left/sprite_2.png" type="Texture" id=11]
+[ext_resource path="res://images/Sprite_left/sprite_3.png" type="Texture" id=12]
+[ext_resource path="res://images/Sprite_left/sprite_4.png" type="Texture" id=13]
+[ext_resource path="res://images/Sprite_right/sprite_right0.png" type="Texture" id=14]
+[ext_resource path="res://images/Sprite_right/sprite_right2.png" type="Texture" id=15]
+[ext_resource path="res://images/Sprite_right/sprite_right1.png" type="Texture" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "TurnRight",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "TurnLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "EngineOn",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "EngineOff",
+"speed": 5.0
+} ]
+
+[node name="Player" type="RigidBody2D" groups=["Player"]]
+scale = Vector2( 1.32001, 1.08 )
+mass = 1.8
+gravity_scale = 3.0
+contact_monitor = true
+script = ExtResource( 2 )
+engine_thrust = 700
+spin_thrust = 5000
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." groups=["Player"]]
+position = Vector2( -0.75757, -44.4445 )
+scale = Vector2( 0.396311, 0.406289 )
+frames = SubResource( 1 )
+animation = "TurnLeft"
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." groups=["Player"]]
+position = Vector2( -0.946976, -58.7963 )
+rotation = 3.14159
+scale = Vector2( 1.28113, -2.2302 )
+polygon = PoolVector2Array( 6.94818, 15.1539, 6.94805, -15.1539, -7.83519, -15.1539, -7.83506, 15.1539 )
