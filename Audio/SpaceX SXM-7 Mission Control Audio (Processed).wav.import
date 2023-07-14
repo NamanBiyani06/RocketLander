@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SpaceX SXM-7 Mission Control Audio (Processed).wav-37b031afffdc01e5cfa8c1ef6c05d9c1.sample"
+
+[deps]
+
+source_file="res://Audio/SpaceX SXM-7 Mission Control Audio (Processed).wav"
+dest_files=[ "res://.import/SpaceX SXM-7 Mission Control Audio (Processed).wav-37b031afffdc01e5cfa8c1ef6c05d9c1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
