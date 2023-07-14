@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Relaxing Music - Space Ambient Music (Cosmos Instrumental Music).wav-941ddf3c7a9fc3c67babd48c6ae37900.sample"
+
+[deps]
+
+source_file="res://Audio/Relaxing Music - Space Ambient Music (Cosmos Instrumental Music).wav"
+dest_files=[ "res://.import/Relaxing Music - Space Ambient Music (Cosmos Instrumental Music).wav-941ddf3c7a9fc3c67babd48c6ae37900.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
