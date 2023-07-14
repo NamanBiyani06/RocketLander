@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/rocket_sound-[AudioTrimmer.com].wav-e93b6d4d21ceb9b1d8240fcd298ce4c1.sample"
+
+[deps]
+
+source_file="res://rocket_sound-[AudioTrimmer.com].wav"
+dest_files=[ "res://.import/rocket_sound-[AudioTrimmer.com].wav-e93b6d4d21ceb9b1d8240fcd298ce4c1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
